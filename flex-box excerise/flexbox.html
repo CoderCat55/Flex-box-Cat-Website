@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box excerise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <style>
+    body{
+        margin:0;
+    }
+    h1{
+        font-family: 'Amatic SC', cursive;
+    }
+    @media (max-width: 1250px) {
+      .container {
+        flex-direction: column;
+        height: 100%;
+      }
+    } 
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: antiquewhite;
+        border-radius: 0;
+        margin:0;
+        flex-wrap: wrap;
+    }
+     div{
+        margin:20px;
+        background-color:gainsboro;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        min-width: fit-content;
+        max-width: max-content;
+     }
+     img{
+        margin:20px;
+     }
+     p{
+        margin-right:10px;
+     }
+    </style>
+</head>
+<body>
+   <div class="container">
+
+    <h1>Those are cats</h1>
+
+    <div>
+        <img src="images/1.jpg"  width=200px height=200px>
+        <p>This is a cat</p>
+    </div>
+
+    <div>
+        <img src="images/2.jpg" width=200px height=200px>
+        <p>This is a cat</p>
+    </div>
+
+    <div>
+        <img src="images/3.jpg" width=200px height=200px>
+        <p>This is a cat</p>
+    </div>
+
+    <div>
+        <img src="images/5.jpg"  width=200px height=200px>
+        <p>This is a cat</p>
+    </div>
+
+    <div>
+        <img src="images/6.jpg" width=200px height=200px>
+        <p>This is a cat</p>
+    </div>
+ </div>
+    
+</body>
+</html>
